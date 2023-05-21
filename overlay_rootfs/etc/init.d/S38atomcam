@@ -21,6 +21,7 @@ case "$1" in
     cp /scripts/null.sh /tmp/system/usr/boa/boa
     cp /etc/nsswitch.conf /tmp/system/etc
     cp /bin/busybox /tmp/system/bin
+    cp -r /etc/ssl /tmp/system/etc
     mount -o bind /scripts/null.sh /atom/system/bin/restart_wlan0.sh
     /scripts/set_crontab.sh
     touch /tmp/resolv.conf
